@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "demo_result_and_vis.py", line 14, in <module>
+    from detectron2.config import get_cfg
+ModuleNotFoundError: No module named 'detectron2'
+Traceback (most recent call last):
+  File "demo_result_and_vis.py", line 14, in <module>
+    from detectron2.config import get_cfg
+ModuleNotFoundError: No module named 'detectron2'
+[32m[09/22 20:16:01 detectron2]: [0mArguments: Namespace(confidence_threshold=0.2, config_file='projects/EntitySeg/configs/entity_r101_1x.yaml', input=['/lab/tmpig23b/u/andy/VR_SC/ACEdata/source'], opts=['MODEL.WEIGHTS', '/lab/tmpig23b/u/zhix/Segement/model/R101_1x.pth', 'MODEL.CONDINST.MASK_BRANCH.USE_MASK_RESCORE', 'False'], output='/lab/tmpig23b/u/zhix/Segement/output')
+Traceback (most recent call last):
+  File "demo_result_and_vis.py", line 115, in <module>
+    cfg = setup_cfg(args)
+  File "demo_result_and_vis.py", line 59, in setup_cfg
+    cfg.merge_from_file(args.config_file)
+  File "/lab/andy/anaconda3/envs/xuzhi/lib/python3.6/site-packages/detectron2/config/config.py", line 30, in merge_from_file
+    assert PathManager.isfile(cfg_filename), f"Config file '{cfg_filename}' does not exist!"
+AssertionError: Config file 'projects/EntitySeg/configs/entity_r101_1x.yaml' does not exist!
