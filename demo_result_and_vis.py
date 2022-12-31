@@ -124,17 +124,13 @@ if __name__ == "__main__":
         # class_list = ["ambulance",]
         for root, dir, files in os.walk(args.input[0]):
             break
-        print(root, dir, files)
         mask_dict = {}
-        out_dir = '/lab/tmpig8e/u/brian-data/COCO2017/train2017_entseg/'
         out_dir = args.output
         try:
             if not os.path.exists(os.path.join(out_dir)):
                 os.mkdir(os.path.join(out_dir))
-            print("here")
             for root1, dir, files in os.walk(root):
                 break
-            print("hhere")
             for path in tqdm.tqdm(files, disable=not args.output):
                 if os.path.exists(os.path.join(out_dir,"{}".format(path))):
                     continue
